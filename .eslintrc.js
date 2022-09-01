@@ -1,8 +1,19 @@
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    jest: true,
+  },
   root: true,
-  extends: '@react-native-community',
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    '@react-native-community',
+    'prettier',
+  ],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['react', '@typescript-eslint'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],

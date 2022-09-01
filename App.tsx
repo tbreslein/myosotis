@@ -14,7 +14,7 @@ import {
   MD3LightTheme as DefaultTheme,
   Provider as PaperProvider,
 } from 'react-native-paper';
-import {Text, View} from 'react-native';
+import { Text, View } from 'react-native';
 
 const theme = {
   ...DefaultTheme,
