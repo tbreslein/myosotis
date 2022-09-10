@@ -23,11 +23,27 @@ const App = () => (
       <RootStack.Navigator
         initialRouteName="ToDos"
         screenOptions={{ header: (props: any) => <AppBar {...props} /> }}>
-        <RootStack.Screen name="Deadlines" component={DeadlinesScreen} />
-        <RootStack.Screen name="HouseHold" component={HouseholdScreen} />
-        <RootStack.Screen name="Settings" component={SettingsScreen} />
-        <RootStack.Screen name="ToDos" component={ToDosScreen} />
-        <RootStack.Screen name="UserProfile" component={UserProfileScreen} />
+        <RootStack.Screen
+          name="Deadlines"
+          component={DeadlinesScreen}
+          options={{ title: 'Deadlines' }}
+        />
+        <RootStack.Screen
+          name="HouseHold"
+          component={HouseholdScreen}
+          options={{ title: 'Households' }}
+        />
+        <RootStack.Screen
+          name="Settings"
+          component={SettingsScreen}
+          options={{ title: 'Settings' }}
+        />
+        <RootStack.Screen name="ToDos" component={ToDosScreen} options={{ title: 'ToDos' }} />
+        <RootStack.Screen
+          name="UserProfile"
+          component={UserProfileScreen}
+          options={{ title: 'Households' }}
+        />
       </RootStack.Navigator>
     </NavigationContainer>
   </PaperProvider>
