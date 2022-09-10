@@ -1,7 +1,4 @@
 export type RootStackParamList = {
-  ToDos: undefined;
-  HouseHold: { houseHoldId: string };
-  Deadlines: undefined;
+  Home: undefined;
   Settings: undefined;
-  UserProfile: { userId: string };
 };
