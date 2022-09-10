@@ -26,23 +26,23 @@ const App = () => (
         <RootStack.Screen
           name="Deadlines"
           component={DeadlinesScreen}
-          options={{ title: 'Deadlines' }}
+          options={{ headerTitle: 'Deadlines' }}
         />
         <RootStack.Screen
           name="HouseHold"
           component={HouseholdScreen}
-          options={{ title: 'Households' }}
+          options={{ headerTitle: 'Households' }}
         />
         <RootStack.Screen
           name="Settings"
           component={SettingsScreen}
-          options={{ title: 'Settings' }}
+          options={{ headerTitle: 'Settings' }}
         />
-        <RootStack.Screen name="ToDos" component={ToDosScreen} options={{ title: 'ToDos' }} />
+        <RootStack.Screen name="ToDos" component={ToDosScreen} options={{ headerTitle: 'ToDos' }} />
         <RootStack.Screen
           name="UserProfile"
           component={UserProfileScreen}
-          options={{ title: 'Households' }}
+          options={{ headerTitle: 'Households' }}
         />
       </RootStack.Navigator>
     </NavigationContainer>
