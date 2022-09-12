@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import ToDosScreen from '../../screens/ToDosScreen';
 import DeadlinesScreen from '../../screens/DeadlinesScreen';
 import HouseholdScreen from '../../screens/HouseHoldScreen';
@@ -19,7 +19,7 @@ const HomeTabs = () => {
         component={ToDosScreen}
         options={{
           tabBarLabel: 'ToDos',
-          tabBarIcon: () => <MaterialCommunityIcons name="format-list-checks" size={26} />,
+          tabBarIcon: () => <MaterialCommunityIcon name="format-list-checks" size={26} />,
         }}
       />
       <Tab.Screen
@@ -27,7 +27,7 @@ const HomeTabs = () => {
         component={DeadlinesScreen}
         options={{
           tabBarLabel: 'Deadlines',
-          tabBarIcon: () => <MaterialCommunityIcons name="alarm" size={26} />,
+          tabBarIcon: () => <MaterialCommunityIcon name="alarm" size={26} />,
         }}
       />
       <Tab.Screen
@@ -35,7 +35,7 @@ const HomeTabs = () => {
         component={HouseholdScreen}
         options={{
           tabBarLabel: 'Household',
-          tabBarIcon: () => <MaterialCommunityIcons name="home-variant-outline" size={26} />,
+          tabBarIcon: () => <MaterialCommunityIcon name="home-variant-outline" size={26} />,
         }}
       />
       <Tab.Screen
@@ -43,7 +43,7 @@ const HomeTabs = () => {
         component={UserProfileScreen}
         options={{
           tabBarLabel: 'Profile',
-          tabBarIcon: () => <MaterialCommunityIcons name="account" size={26} />,
+          tabBarIcon: () => <MaterialCommunityIcon name="account" size={26} />,
         }}
       />
     </Tab.Navigator>
