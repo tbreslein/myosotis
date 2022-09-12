@@ -3,7 +3,7 @@ import { getHeaderTitle } from '@react-navigation/elements';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Appbar, Button } from 'react-native-paper';
 import { RootStackParamList } from '../../types/RootStackParamList';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialCommunityIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import type { NativeStackNavigationOptions } from '@react-navigation/native-stack';
 
 type AppBarProps = NativeStackScreenProps<RootStackParamList> & {
@@ -22,7 +22,7 @@ export const AppBar = ({ navigation, route, options, back }: AppBarProps) => {
         onPress={() => {
           navigation.navigate('Settings');
         }}>
-        <Icon name="cog" />
+        <MaterialCommunityIcon name="cog" size={18} />
       </Button>
     </Appbar.Header>
   );
