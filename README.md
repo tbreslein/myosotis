@@ -55,6 +55,12 @@ From that point on, if you have opened the android folder of this repo in androi
   - [ ] add households
 - [ ] add the backend?
 
+## backend candidates
+
+- firebase (probably not, because it might be overkill?)
+- supabase (open source, but still kinda overkill)
+- pocket base (I need to host it myself, but seems super simple and uses Go for functionality; currently my fave)
+
 ## License
 
 The Myosotis code is licensed under the `BSD-3` license:
